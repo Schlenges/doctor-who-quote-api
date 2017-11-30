@@ -22,6 +22,10 @@ MongoClient.connect(process.env.DATABASEURL, function(err, db){
             if(err){
                 res.send("Sorry, something went wrong! Error:" + err);
             } else {
+                res.setHeader('Content-Type', 'application/json');
+                res.header("Access-Control-Allow-Origin", "*");
+                res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+                
                 res.send(items);
             }
         });
