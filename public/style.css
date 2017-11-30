@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+
+.container-fluid{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Raleway';
+    color: black;
+    margin-right: -50px;
+}
+
+img{
+    transform: scale(0.6, 0.6);
+    margin-top: -60px;
+    margin-bottom: -80px;
+    margin-left: -50px;
+}
+
+pre{
+    text-align: left;
+}
+
+#example{
+    width: 40%;
+    margin: auto;
+}

@@ -3,9 +3,12 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000;
 
+app.use(express.static(__dirname + "/view"));
+app.use(express.static(__dirname + "/public"));
+
 // Index Route
 app.get("/", function(req, res){
-    res.send("Hi there!");
+    res.render("index.html");
 });
 
 // Connect to Database
@@ -48,7 +51,7 @@ MongoClient.connect("mongodb://localhost/quotesAPI", function(err, db){
             return amount = 1;
         };
     };
-          
+
 });
 
 // Listen To Port

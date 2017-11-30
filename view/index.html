@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Who Quotes API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <img class="img-fluid" src="dw-logo.png">
+    <h1>Quote API</h1>
+    <p>To request a single random quote: "https://url.com/quotes"</p>
+    <p>To request quotes by character: "https://url.com/quotes/&lt;name&gt;"</p>
+    <p>To request multiple quotes define an amount: "https://url.com/quotes?amount=&lt;number&gt;"</p>
+    <p>The data will return in JSON format like this:</p>
+    <div id="example">
+    <pre>
+        [
+          {
+          "quote": "I am definitely a madman with a box!",
+          "episode": "Season 5, Episode 1",
+          "character": "The Doctor"
+          }
+        ]
+    </pre>
+    </div>
+</div>
+
+</body>
+</html>
