@@ -12,8 +12,7 @@ app.get("/", function(req, res){
 });
 
 // Connect to Database
-//MongoClient.connect("mongodb://localhost/quotesAPI"
-MongoClient.connect("mongodb://Meike:hanki008@ds127126.mlab.com:27126/quotes-api", function(err, db){
+MongoClient.connect(process.env.DATABASEURL, function(err, db){
     var quotes = db.collection('quotes');      
 
     // Get Random Quotes
