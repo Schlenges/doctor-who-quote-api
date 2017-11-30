@@ -1,0 +1,15 @@
+{
+  "name": "quotesapi",
+  "version": "1.0.0",
+  "description": "An API serving quotes from Doctor Who",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Meike Hankewicz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  }
+}
