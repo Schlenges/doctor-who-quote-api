@@ -12,7 +12,9 @@ app.get("/", function(req, res){
 });
 
 // Connect to Database
-MongoClient.connect(process.env.DATABASEURL, function(err, db){
+var url = process.env.DATABASEURL || "mongodb://localhost/quotesAPI";
+
+MongoClient.connect(url, function(err, db){
     var quotes = db.collection('quotes');      
 
     // Get Random Quotes
@@ -45,7 +47,7 @@ MongoClient.connect(process.env.DATABASEURL, function(err, db){
                 res.setHeader('Content-Type', 'application/json');
                 res.header("Access-Control-Allow-Origin", "*");
                 res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-                
+
                 res.send(items);
             }
         });        
