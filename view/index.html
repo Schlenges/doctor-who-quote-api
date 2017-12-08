@@ -11,7 +11,8 @@
     <img class="img-fluid" src="dw-logo.png">
     <h1>Quote API</h1>
     <p>To get a single random quote, request: "https://dw-quote-api.herokuapp.com/quotes"</p>
-    <p>To get quotes from a particular character, enter their name: "https://dw-quote-api.herokuapp.com/quotes/&lt;name&gt;"</p>
+    <p>To get quotes from a particular character: "https://dw-quote-api.herokuapp.com/quotes/character/&lt;name&gt;"</p>
+    <p>To get quotes from the timeline of a certain Doctor: "https://dw-quote-api.herokuapp.com/quotes/timeline/&lt;incarnation&gt;"</p>
     <p>For multiple quotes, define the amount you want returned: "https://dw-quote-api.herokuapp.com/quotes?amount=&lt;number&gt;"</p>
     <p>The data will return in JSON format. Here is an example:</p>
     <div id="example">
@@ -19,7 +20,7 @@
         [
           {
           "quote": "I am definitely a madman with a box!",
-          "timeline": "Eleventh Doctor",
+          "timeline": "Eleven",
           "character": "The Doctor"
           }
         ]
